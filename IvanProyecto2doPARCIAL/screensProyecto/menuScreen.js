@@ -11,7 +11,7 @@ import ScrollViewScreen from './ScrollViewScreen'
 import ActivityIndicatorScreen from './ActivityIndicatorScreen'
 import FlatListScreen from './FlatListScreen'
 import ModalScreen from './ModalScreen'
-import BottomSheetScreen from './BottomSheetScreen'
+import MenuLateralScreen from './MenuLateralScreen'
 
 
 import { ImageBackground } from 'react-native-web'
@@ -25,8 +25,8 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
     const [screen, setScreen] = useState('menu');     /* lo del "menu" significa que por default siempre me abra la pantalla "Menu"  */
     switch(screen)
     {
-        case 'contador':
-            return <ContadorScreen/>
+        case 'MenuLateral':
+            return <MenuLateralScreen/>
 
         case 'botones':
             return <BotonesScreen/>
@@ -60,7 +60,7 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                     return (
                         <View style={styles.EstiloBotones}>
                             <Text>Menu de practicas</Text>
-                            <Button color= "orange" title='Pract:Contador' onPress={()=> setScreen('contador')}/>
+                            <Button color= "orange" title='Pract:MenuLateral' onPress={()=> setScreen('MenuLateral')}/>
                             <Button color="orange" title='Pract:Buttons'  onPress={()=> setScreen('botones')}/>
                             <Button color="orange" title='Pract:Input y Alert'  onPress={()=> setScreen('input_alert')}/>
                             <Button color="orange" title='Pract:Image Background'  onPress={()=> setScreen('image_background')}/>
