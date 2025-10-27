@@ -12,8 +12,9 @@ import ActivityIndicatorScreen from './ActivityIndicatorScreen'
 import FlatListScreen from './FlatListScreen'
 import ModalScreen from './ModalScreen'
 import MenuLateralScreen from './MenuLateralScreen'
+import CargaScreen from './CargaScreen'
 
-
+//CargaScreen
 import { ImageBackground } from 'react-native-web'
 
 
@@ -55,6 +56,9 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
         case 'bottom_sheet':
             return <BottomSheetScreen/>
 
+        case 'Carga':
+            return <CargaScreen/>
+
         case 'menu':
             default:
                     return (
@@ -70,6 +74,7 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color="orange" title='Pract:Flat list'  onPress={()=> setScreen('flat_list')}/>
                             <Button color="orange" title='Pract:Modal'  onPress={()=> setScreen('modal')}/>
                             <Button color="orange" title='Pract:Bottom sheet'  onPress={()=> setScreen('bottom_sheet')}/>
+                            <Button color="orange" title='Pract:Carga'  onPress={()=> setScreen('Carga')}/>
                         </View>
                     )
 
