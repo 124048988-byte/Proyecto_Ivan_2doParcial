@@ -1,15 +1,9 @@
-
-
 import { Text, StyleSheet, View, Button} from 'react-native' 
 import React, { useState } from 'react' 
-
 import MenuLateralScreen from './MenuLateralScreen'
 import ConfiguracionScreen from './ConfiguracionScreen'
 import CargaScreen from './CargaScreen'
-
-
-
-
+import Transferencias from './Transferencias'
 
 
 
@@ -26,15 +20,19 @@ export default function menuScreen()  {
        
         case 'CargaScreen':
             return <CargaScreen/>
+        
+        case 'Transferencias':
+            return <Transferencias/>
 
         case 'menu':
             default:
                     return (
                         <View style={styles.EstiloBotones}>
-                            <Text>Menu de practicas</Text>
+                            <Text>Menu de pantallas</Text>
                             <Button  title='Menu Lateral' onPress={()=> setScreen('MenuLateralScreen')}/>
                             <Button  title='Configuraciones' onPress={()=> setScreen('ConfiguracionScreen')}/>
                             <Button  title='CargaScreen' onPress={()=> setScreen('CargaScreen')}/>
+                            <Button  title='Transferencias' onPress={()=> setScreen('Transferencias')}/>
                         </View>
                     )
 
@@ -51,6 +49,7 @@ const styles = StyleSheet.create({
     {
       color: "#67a3e0ff",     
       alignItems: 'center',  
+      gap: 10,
       fontSize: 30,               
       fontFamily: 'Times New Roman', 
       fontWeight: 'bold',            
