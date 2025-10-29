@@ -13,7 +13,7 @@ export default function CargaScreen () {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: '#2a6db0ff',
     justifyContent: 'center',
     alignItems: 'center'
   },
