@@ -1,140 +1,122 @@
-import { useState } from 'react'
-import { Text, StyleSheet, View, TouchableOpacity, ScrollView, Image } from 'react-native'
+import { useState } from 'react';
+import { Text, StyleSheet, View, TouchableOpacity, ScrollView, Image } from 'react-native';
 
-export default function MioScreen () {
-  const [items, setItems] = useState ([
-    {type: 'image', source: require ('../assets/Recursos/4.jpg')},
-    {type: 'image', source: require ('../assets/Recursos/4.jpg')},
-    {type: 'image', source: require ('../assets/Recursos/4.jpg')}
-  ])
+export default function PrincipalScreen() {
+  const [items, setItems] = useState([
+    { label: 'Token Móvil', source: require('../assets/Recursos/Token.png') },
+    { label: 'Operaciones QR', source: require('../assets/Recursos/qr.jpg') },
+    { label: 'Emergencias', source: require('../assets/Recursos/sos.png') }
+  ]);
 
   return (
     <View style={styles.container}>
-    <ScrollView 
-     style = {styles.Scroll }
-     contentContainerStyle = {styles.scrollContainer}
-     horizontal = {true}
-     showsHorizontalScrollIndicator= {true}
-     persistentScrollbar= {true}
-     >
-     {items.map((item, index) => (
-     <View key= {index} style= {styles.box}>
-      {item.type === 'image' ? (
-       <Image source={item.source} style={styles.image} /> 
-      ): (
-        <Text style = {styles.boxText} >{item.content}</Text>
-      )}    
-     </View>
-     ))} 
+      
+      <View style={styles.header}>
+        <Text style={styles.appName}>Ahorra+ App</Text>
+        <View style={styles.menuIcon}>
+        <Text style={styles.menuLines}>≡</Text>
+        </View>
 
-    </ScrollView>
+        <Text style={styles.greeting}>HOLA LUIS FERNANDO</Text>
+        <Text style={styles.changeUser}>cambiar usuario</Text>
+        </View>
+        <TouchableOpacity style={styles.biometricsButton}>
+        <Text style={styles.biometricsText}>Entrar con biometría</Text>
+      </TouchableOpacity>
 
-      <View style ={styles.header}>  
-      <Text style = {styles.texto} > Ahorra+App </Text>
-      <Text style = {styles.texto2} > Hola, Luis Fernando </Text>
-      <Text style = {styles.texto3} > Cambiar de usuario </Text>
-      </View> 
-     <TouchableOpacity style = {styles.boton}>
-     <Text style = {styles.botontexto} > Entrar con biometría </Text>
-     </TouchableOpacity>
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={styles.scrollContainer}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+       >
+        {items.map((item, index) => (
+          <View key={index} style={styles.iconBox}>
+          <Image source={item.source} style={styles.image} />
+          <Text style={styles.iconLabel}>{item.label}</Text>
+          </View>
+        ))}
+      </ScrollView>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
-    justifyContent: 'left',
-    alignItems: 'center'
-  },
-  texto: {
-    color: 'white',
-    fontSize: 30,
-    marginBottom: 20,
-    textAlign: 'center'
-   
-  },
-    texto2: {
-    color: 'white',
-    fontSize: 30,
-    marginBottom: 20,
-    textAlign: 'left',   
-    //marginLeft: 0 
-    alignSelf:'flex-start',
-    paddingVertical: 60, // alto
-    paddingHorizontal: 0, // ancho
-
-  },
-     texto3: {
-    color: 'white',
-    marginBottom: 20,
-    textAlign: 'flex-start',   
-    marginVertical: -80, 
-    alignSelf:'left',
-    paddingVertical: 0, // alto
-    paddingHorizontal: 10, // ancho
-
-  },
-
-  boton: {
-  position :  'absolute',
-  bottom: 300,
-  alignSelf:  'center',
-  backgroundColor: 'white',
-  paddingVertical: 20, // alto
-  paddingHorizontal: 60, // ancho
-  borderRadius: 10, // bordes redondeados
-  minWidth: 200, //asegura un ancho minimo
-  alignItems: 'center', ///centrar
-  //marginTop: -30,
-
-  },
-  botontexto: {
-   color: 'purple',
-   fontSize: 18 ,
-   
- 
-  },
-  header: {// todo este centrado
-    position:  'absolute',
-    top: 100,
- //   alignItems:  'center',
-    width: '100%', //para centrar tmb
+    backgroundColor: '#2C3EFA', 
+    paddingTop: 60,
     paddingHorizontal: 20
   },
-  box: {
+  header: {
+    marginBottom: 40
+  },
+  appName: {
+    fontSize: 24,
+    color: 'white',
+    fontWeight: 'bold'
+  },
+  menuIcon: {
+    position: 'absolute',
+    top: 0,
+    right: 0
+  },
+  menuLines: {
+    fontSize: 30,
+    color: 'white'
+  },
+  greeting: {
+    fontSize: 22,
+    color: 'white',
+    marginTop: 20
+  },
+  changeUser: {
+    fontSize: 16,
+    color: 'white',
+    textDecorationLine: 'underline',
+    marginTop: 5
+  },
+  biometricsButton: {
     backgroundColor: 'white',
-    padding: 20,
-    marginHorizontal:10,
-    borderRadius:10
+    paddingVertical: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginBottom: 30
   },
-  boxText:{
-    color: 'purple',
-    fontSize:  18, 
-    
+  biometricsText: {
+    color: '#6C2DC7',
+    fontSize: 18,
   },
-
   scroll: {
-   // position: 'absolute',
-    top: 250,
-    height : 100,
-    width:  '100%',
-    paddingHorizontal:10,
-    backgroundColor:  'white',
-    zIndex:1
-    marginTop: 2500,
+    flexGrow: 0
   },
-  scrollContainer:{ //centra y limita el scroll
-    alignItems:'center',
-    justifyContent: 'center',
+  scrollContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  iconBox: {
+    backgroundColor: 'white',
+    borderRadius: 10,
+    padding: 10,
+    marginRight: 15,
+    alignItems: 'center',
+    width: 100
   },
   image: {
-width: 100,
-height: 100,
-borderRadius: 10,
-resizeMode: 'cover',
-
+    width: 60,
+    height: 60,
+    marginBottom: 10,
+    resizeMode: 'contain'
+  },
+  iconLabel: {
+    fontSize: 14,
+    color: '#6C2DC7',
+    textAlign: 'center'
   }
+});
 
-})
+
+
+
+
+
