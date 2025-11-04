@@ -27,7 +27,7 @@ export default function MenuLateralScreen({navigation}) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#1E40AF',
+        backgroundColor: '#2a6db0ff',
         flex: 1,
         padding: 20,
     },

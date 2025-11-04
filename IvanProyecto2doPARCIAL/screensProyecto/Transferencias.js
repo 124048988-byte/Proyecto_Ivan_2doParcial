@@ -32,7 +32,7 @@ export default function Transferencias() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0061E0',
+    backgroundColor: '#2a6db0ff',
   },
   header: {
     flexDirection: 'row',

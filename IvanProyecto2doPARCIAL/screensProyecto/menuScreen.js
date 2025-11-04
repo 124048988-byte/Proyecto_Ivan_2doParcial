@@ -47,7 +47,7 @@ export default function menuScreen()  {
 const styles = StyleSheet.create({
     EstiloBotones:
     {
-      color: "#67a3e0ff",     
+      color: "#2a6db0ff",     
       alignItems: 'center',  
       gap: 10,
       fontSize: 30,               
