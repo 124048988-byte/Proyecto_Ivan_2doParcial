@@ -4,7 +4,7 @@ import MenuLateralScreen from './MenuLateralScreen'
 import ConfiguracionScreen from './ConfiguracionScreen'
 import CargaScreen from './CargaScreen'
 import Transferencias from './Transferencias'
-
+import Transferencias2 from './Transferencias2'
 
 
 export default function menuScreen()  { 
@@ -24,6 +24,8 @@ export default function menuScreen()  {
         case 'Transferencias':
             return <Transferencias/>
 
+         case 'Transferencias2':
+            return <Transferencias2/>
         case 'menu':
             default:
                     return (
@@ -33,6 +35,7 @@ export default function menuScreen()  {
                             <Button  title='Configuraciones' onPress={()=> setScreen('ConfiguracionScreen')}/>
                             <Button  title='CargaScreen' onPress={()=> setScreen('CargaScreen')}/>
                             <Button  title='Transferencias' onPress={()=> setScreen('Transferencias')}/>
+                            <Button  title='Transferencias2' onPress={()=> setScreen('Transferencias2')}/>
                         </View>
                     )
 

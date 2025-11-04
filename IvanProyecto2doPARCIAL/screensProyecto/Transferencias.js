@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default function Transferencias() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
      
       <View style={styles.header}>
         <Ionicons name="chevron-back" size={24} color="white" />
@@ -25,7 +25,7 @@ export default function Transferencias() {
           <Text style={styles.buttonText}>Continuar</Text>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
