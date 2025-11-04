@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default function Transferencias2() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
     
       <View style={styles.header}>
         <TouchableOpacity>
@@ -43,7 +43,7 @@ export default function Transferencias2() {
           <Text style={styles.opcionTexto}>Contactos guardados</Text>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
