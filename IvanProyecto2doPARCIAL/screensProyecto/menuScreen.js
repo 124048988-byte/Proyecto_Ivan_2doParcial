@@ -1,5 +1,6 @@
 import { Text, StyleSheet, View, Button } from 'react-native';
 import React, { useState } from 'react';
+
 import ConfiguracionScreen from './ConfiguracionScreen';
 import CargaScreen from './CargaScreen';
 import Transferencias from './Transferencias';
@@ -9,6 +10,18 @@ import Transferencias4 from './Transferencias4';
 import Transferencias5 from './Transferencias5';
 import TransferenciaExitosa from './TransferenciaExitosa';
 import PrincipalScreen from './PrincipalScreen';
+
+import ContadorScreen from './ContadorScreen';
+import BotonesScreen from './BotonesScreen';
+import InputAlertScreen from './InputAlertScreen';
+import ImageBackgroundScreen from './ImageBackgroundScreen';
+import SlapshScreen from './SlapshScreen';
+import ScrollViewScreen from './ScrollViewScreen';
+import ActivityIndicatorScreen from './ActivityIndicatorScreen';
+import FlatListScreen from './FlatListScreen';
+import ModalScreen from './ModalScreen';
+import BottomSheetScreen from './BottomSheetScreen';
+
 import { ImageBackground } from 'react-native-web';
 
 export default function menuScreen() {
@@ -17,31 +30,44 @@ export default function menuScreen() {
   switch (screen) {
     case 'ConfiguracionScreen':
       return <ConfiguracionScreen />;
-
     case 'CargaScreen':
       return <CargaScreen />;
-
     case 'Transferencias':
       return <Transferencias />;
-
     case 'Transferencias2':
       return <Transferencias2 />;
-
     case 'Transferencias3':
       return <Transferencias3 />;
-
     case 'Transferencias4':
       return <Transferencias4 />;
-
     case 'Transferencias5':
       return <Transferencias5 />;
-
     case 'TransferenciaExitosa':
       return <TransferenciaExitosa />;
-
+    case 'Contador':
+      return <ContadorScreen />;
+    case 'botones':
+      return <BotonesScreen />;
+    case 'input_alert':
+      return <InputAlertScreen />;
+    case 'image_background':
+      return <ImageBackgroundScreen />;
+    case 'slapsh_screen':
+      return <SlapshScreen />;
+    case 'scroll_view':
+      return <ScrollViewScreen />;
+    case 'activity_indicator':
+      return <ActivityIndicatorScreen />;
+    case 'flat_list':
+      return <FlatListScreen />;
+    case 'modal':
+      return <ModalScreen />;
+    case 'bottom_sheet':
+      return <BottomSheetScreen />;
+    case 'Carga':
+      return <CargaScreen />;
     case 'Principal':
       return <PrincipalScreen />;
-
     default:
       return (
         <View style={styles.EstiloBotones}>
@@ -54,6 +80,9 @@ export default function menuScreen() {
           <Button title='Transferencias 4' onPress={() => setScreen('Transferencias4')} />
           <Button title='Transferencias 5' onPress={() => setScreen('Transferencias5')} />
           <Button title='Transferencia Exitosa' onPress={() => setScreen('TransferenciaExitosa')} />
+
+          <Text>Menu de practicas</Text>
+          <Button color="orange" title='Pract:Contador' onPress={() => setScreen('Contador')} />
           <Button color="orange" title='Pract:Buttons' onPress={() => setScreen('botones')} />
           <Button color="orange" title='Pract:Input y Alert' onPress={() => setScreen('input_alert')} />
           <Button color="orange" title='Pract:Image Background' onPress={() => setScreen('image_background')} />
