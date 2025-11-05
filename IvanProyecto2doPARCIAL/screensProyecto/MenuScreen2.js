@@ -18,6 +18,11 @@ import Transferencias2 from './Transferencias2';
 import Transferencias3 from './Transferencias3';
 import Transferencias4 from './Transferencias4';
 import Transferencias5 from './Transferencias5';
+import ConfiguracionScreen from './ConfiguracionScreen';
+import CerrarScreen from './CerrarScreen';
+import CuentasScreen from './CuentasScreen';
+
+
 import TransferenciaExitosa from './TransferenciaExitosa';
 
 
@@ -54,7 +59,13 @@ export default function MenuScreen2()  { /* Esta linea era para crear componente
             return <NotificacionesScreen/>
             
         case 'MenuLateralScreen':
-            return <MenuLateralScreen/> 
+            return <MenuLateralScreen/>
+         case 'Cerrar':
+            return <CerrarScreen/> 
+        case 'Configuracion':
+            return <ConfiguracionScreen/> 
+        case 'Cuentas':
+            return <CuentasScreen/>  
         /*case 'image_background':
             return <ImageBackgroundScreen/>  */
         
@@ -88,7 +99,10 @@ export default function MenuScreen2()  { /* Esta linea era para crear componente
                             <Button color="orange" title='Pract:Pagina Principal'  onPress={()=> setScreen('PrincipalScreen')}/>
                             <Button color="orange" title='Pract:Notificacion'  onPress={()=> setScreen('NotificacionesScreen')}/>
                             <Button color="orange" title='Pract:Menú Lateral'  onPress={()=> setScreen('MenuLateralScreen')}/>
-                            
+                            <Button color="orange" title='Pract:Configuracion'  onPress={()=> setScreen('Configuracion')}/>
+                            <Button color="orange" title='Pract:Cerrar'  onPress={()=> setScreen('Cerrar')}/>
+                            <Button color="orange" title='Pract:Cuentas'  onPress={()=> setScreen('Cuentas')}/>
+
 
                             <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('Pantalla2')}/>
                            {/*  <Button color="orange" title='Pract:Buttons'  onPress={()=> setScreen('botones')}/>
