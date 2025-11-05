@@ -6,7 +6,9 @@ import CargaScreen from './CargaScreen'
 import Transferencias from './Transferencias'
 import Transferencias2 from './Transferencias2'
 import Transferencias3 from './Transferencias3'
-
+import Transferencias4 from './Transferencias4'
+import Transferencias5 from './Transferencias5'
+import TransferenciaExitosa from './TransferenciaExitosa'
 export default function menuScreen()  { 
  
     const [screen, setScreen] = useState('menu');     
@@ -29,6 +31,15 @@ export default function menuScreen()  {
 
         case 'Transferencias3':
             return <Transferencias3/>
+
+        case 'Transferencias4':
+            return <Transferencias4/>
+        
+        case 'Transferencias5':
+            return <Transferencias5/>
+        
+        case 'TransferenciaExitosa':
+            return <TransferenciaExitosa/>
         case 'menu':
             default:
                     return (
@@ -40,6 +51,9 @@ export default function menuScreen()  {
                             <Button  title='Transferencias' onPress={()=> setScreen('Transferencias')}/>
                             <Button  title='Transferencias2' onPress={()=> setScreen('Transferencias2')}/>
                             <Button  title='Transferencias 3' onPress={()=> setScreen('Transferencias3')}/> 
+                            <Button  title='Transferencias 4' onPress={()=> setScreen('Transferencias4')}/>
+                            <Button  title='Transferencias 5' onPress={()=> setScreen('Transferencias5')}/>
+                            <Button  title='Transferencia Exitosa' onPress={()=> setScreen('TransferenciaExitosa')}/>  
                         </View>
                     )
 

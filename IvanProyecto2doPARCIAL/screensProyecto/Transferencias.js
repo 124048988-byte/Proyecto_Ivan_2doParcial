@@ -1,18 +1,19 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet,  } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Transferencias() {
+export default function Transferencias({ navigation }) {
+
+  
   return (
     <View style={styles.container}>
-     
+   
       <View style={styles.header}>
         <Ionicons name="chevron-back" size={24} color="white" />
         <Text style={styles.headerTitulo}>Transferir</Text>
         <Ionicons name="close" size={24} color="white" />
       </View>
 
-   
       <View style={styles.content}>
         <View style={styles.cartera}>
           <Text style={styles.carteraTitulo}>Tu dinero</Text>
@@ -24,6 +25,41 @@ export default function Transferencias() {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Continuar</Text>
         </TouchableOpacity>
+
+       
+        <View style={styles.buttonsContainer}>
+          <TouchableOpacity 
+            style={styles.actionButton}
+            onPress={() => navigation.navigate('ListaTransacciones')}
+          >
+            <Ionicons name="list" size={20} color="#fff" />
+            <Text style={styles.actionButtonText}>Lista de transacciones</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={styles.actionButton}
+            onPress={() => navigation.navigate('AgregarTransacciones')}
+          >
+            <Ionicons name="add-circle" size={20} color="#fff" />
+            <Text style={styles.actionButtonText}>Agregar transacción</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={styles.actionButton}
+            onPress={() => navigation.navigate('EditarTransacciones')}
+          >
+            <Ionicons name="create" size={20} color="#fff" />
+            <Text style={styles.actionButtonText}>Editar transacción</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={styles.actionButton}
+            onPress={() => navigation.navigate('EliminarTransacciones')}
+          >
+            <Ionicons name="trash" size={20} color="#fff" />
+            <Text style={styles.actionButtonText}>Eliminar transacción</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -85,10 +121,29 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 20,
   },
   buttonText: {
     color: '#fff',
     fontWeight: '600',
     fontSize: 16,
+  },
+
+  buttonsContainer: {
+    gap: 10,
+  },
+  actionButton: {
+    flexDirection: 'row',
+    backgroundColor: '#2a6db0ff',
+    paddingVertical: 12,
+    paddingHorizontal: 15,
+    borderRadius: 8,
+    alignItems: 'center',
+    gap: 10,
+  },
+  actionButtonText: {
+    color: '#fff',
+    fontWeight: '500',
+    fontSize: 14,
   },
 });
