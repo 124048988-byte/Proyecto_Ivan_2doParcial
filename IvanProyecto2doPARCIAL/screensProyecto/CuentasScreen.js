@@ -65,8 +65,12 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingHorizontal: 20,
   },
-  back: { fontSize: 26, color: "#fff" },
-  menu: { fontSize: 26, color: "#fff" },
+  back: { fontSize: 26, 
+  color: "#fff" 
+},
+  menu: { fontSize: 26, 
+  color: "#fff" 
+},
   headerTitle: { 
   color: "#fff", 
   fontSize: 20, 
