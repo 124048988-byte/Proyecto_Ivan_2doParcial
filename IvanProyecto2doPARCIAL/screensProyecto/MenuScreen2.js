@@ -22,6 +22,7 @@ import TransferenciaExitosa from './TransferenciaExitosa';
 import ConfiguracionScreen from './ConfiguracionScreen';
 import CuentasScreen from './CuentasScreen';
 import CerrarScreen from './CerrarScreen';
+import DestacaScreen from './DestacaScreen';
 import { ImageBackground } from 'react-native-web'
 
 
@@ -93,7 +94,8 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
         case 'CerrarScreen':
               return <CerrarScreen />;
 
-  
+        case 'DestacaScreen':
+              return <DestacaScreen />;
         case 'Menu':
             default:
                     return (
@@ -115,7 +117,7 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color="orange" title='Pract:Configuraciones'  onPress={()=> setScreen('ConfiguracionScreen')}/>
                             <Button color="orange" title='Pract:Cuentas '  onPress={()=> setScreen('CuentasScreen')}/>
                             <Button color="orange" title='Pract:Cerrar'  onPress={()=> setScreen('CerrarScreen')}/>
-                      
+                            <Button color="orange" title='Pract: Destaca'  onPress={()=> setScreen('DestacaScreen')}/>
                         </View>
                     )
 

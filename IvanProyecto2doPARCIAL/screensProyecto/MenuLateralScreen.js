@@ -1,27 +1,69 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 
 export default function MenuLateralScreen() {
     return(
-         <ScrollView style={styles.container}>
-            <Text style={styles.nombre}>LUIS FERNANDO</Text>
-            <Text style={styles.subtitulo}>Perfil</Text>
+      <ScrollView style={styles.container}>
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.nombre}>LUIS FERNANDO</Text>
+  </TouchableOpacity>
 
-            <Text style={styles.menuOpcion}>Configuración</Text>
-            <Text style={styles.menuOpcion}>Seguridad y Privacidad</Text>
-            <Text style={styles.menuOpcion}>Token Móvil</Text>
-            <Text style={styles.menuOpcion}>Sostenibilidad</Text>
-            <Text style={styles.menuOpcion}>Emergencias</Text>
-            <Text style={styles.menuOpcion}>Zona de Cobro</Text>
-            <Text style={styles.menuOpcion}>Puntos y Promociones</Text>
-            <Text style={styles.menuOpcion}>Consulta retiro sin tarjeta</Text>
-            <Text style={styles.menuOpcion}>Sucursales y cajeros</Text>
-            <Text style={styles.menuOpcion}>Aclaraciones</Text>
-            <Text style={styles.menuOpcion}>Línea Ahorra+App</Text>
-            <Text style={styles.menuOpcion}>Acerca de Ahorra+App</Text>
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.subtitulo}>Perfil</Text>
+  </TouchableOpacity>
 
-            <Text style={[styles.menuOpcion, styles.salir]}>Salir</Text>     
-        </ScrollView>
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Configuración</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Seguridad y Privacidad</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Token Móvil</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Sostenibilidad</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Emergencias</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Zona de Cobro</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Puntos y Promociones</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Consulta retiro sin tarjeta</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Sucursales y cajeros</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Aclaraciones</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Línea Ahorra+App</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={styles.menuOpcion}>Acerca de Ahorra+App</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => Alert.alert('Próximamente..')}>
+    <Text style={[styles.menuOpcion, styles.salir]}>Salir</Text>
+  </TouchableOpacity>
+</ScrollView>
     );
 }
 

@@ -11,19 +11,19 @@ export default function ConfiguracionScreen({ navigation }) {
 
       {/* Contenido desplazable */}
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <TouchableOpacity style={styles.boton}>
+        <TouchableOpacity style={styles.boton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.textoBoton}>🔔 Notificaciones</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.boton}>
+        <TouchableOpacity style={styles.boton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.textoBoton}>🤚 Límites de operaciones</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.boton}>
+        <TouchableOpacity style={styles.boton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.textoBoton}>👁️ Mostrar y ocultar productos</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.boton}>
+        <TouchableOpacity style={styles.boton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.textoBoton}>📱 Pago con célula</Text>
         </TouchableOpacity>
       </ScrollView>

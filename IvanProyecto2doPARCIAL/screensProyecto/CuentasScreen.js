@@ -6,11 +6,11 @@ export default function CuentasScreen() {
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.back}>⬅️</Text>
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Cuentas</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.menu}>☰</Text>
         </TouchableOpacity>
       </View>
@@ -33,17 +33,17 @@ export default function CuentasScreen() {
 
         //Opciones
         <View style={styles.rowButtons}>
-          <TouchableOpacity style={styles.btnBox}>
+          <TouchableOpacity style={styles.btnBox} onPress={() => Alert.alert('Proximamente..')}>
             <Text style={styles.emoji}>🔁</Text>
             <Text style={styles.btnText}>Transferir</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.btnBox}>
+          <TouchableOpacity style={styles.btnBox} onPress={() => Alert.alert('Proximamente..')}>
             <Text style={styles.emoji}>📲</Text>
             <Text style={styles.btnText}>Recargas</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.btnBox}>
+          <TouchableOpacity style={styles.btnBox} onPress={() => Alert.alert('Proximamente..')}>
             <Text style={styles.emoji}>⋯</Text>
             <Text style={styles.btnText}>Ver más</Text>
           </TouchableOpacity>

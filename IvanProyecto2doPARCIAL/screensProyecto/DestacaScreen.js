@@ -11,7 +11,10 @@ export default function Destacacreen() {
       <View style={styles.header}>
         <Text style={styles.title}>inicio</Text>
         <View style={styles.menuIcon}>
-          <Text style={styles.menuLines}>≡</Text>
+          <TouchableOpacity onPress={() => Alert.alert('Proximamente..')}>
+              <Text style={styles.menuLines}>≡</Text>
+          </TouchableOpacity>
+        
         </View>
       </View>
 
@@ -35,29 +38,29 @@ export default function Destacacreen() {
           <Text style={styles.label}>Principales productos</Text>
           <Text style={styles.amount}>$ 100.00</Text>
           <Text style={styles.description}>Saldo disponible</Text>
-          <TouchableOpacity style={styles.link}>
+          <TouchableOpacity style={styles.link} onPress={() => Alert.alert('Proximamente..')}>
             <Text style={styles.linkText}>Ver últimos movimientos</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.link}>
+          <TouchableOpacity style={styles.link} onPress={() => Alert.alert('Proximamente..')}>
             <Text style={styles.linkText}>Ver ingresos y gastos</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
 
       <View style={styles.bottomNav}>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem}onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.navIcon}>🏠</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.navIcon}>📦</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.navIcon}>👤</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.navIcon}>🔔</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.navIcon}>≡</Text>
         </TouchableOpacity>
       </View>
