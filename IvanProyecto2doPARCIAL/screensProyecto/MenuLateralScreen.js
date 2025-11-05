@@ -30,16 +30,13 @@ const styles = StyleSheet.create({
 
 
     backgroundColor: '#1E40AF',
-    width: '65%',        // Solo ocupa 3/4 de la pantalla
+    width: '65%',      
     height: '95%',
     padding: 25,
     borderTopRightRadius: 35,
     borderBottomRightRadius: 35,
     alignSelf: 'flex-end',
-    a082dc4d8b33e16049d010fdcce76a28d6a992b
-   /*  backgroundColor: '#2a6db0ff',
-        flex: 1,
-        padding: 20, */
+    
     },
 
     nombre:{
