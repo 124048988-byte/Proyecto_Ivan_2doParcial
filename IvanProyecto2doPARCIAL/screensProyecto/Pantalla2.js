@@ -1,3 +1,4 @@
+
 import { Text, StyleSheet, View, Image, TouchableOpacity, TextInput, Alert } from 'react-native';
 import React, { useState } from 'react';
 import { AntDesign } from '@expo/vector-icons';
@@ -44,11 +45,14 @@ export default function Pantalla2() {
         <Text>Registro</Text>
       </TouchableOpacity>
     </View>
+
   );
 }
 
+
 const styles = StyleSheet.create({
-  Pantalla2: 
+
+  Pantalla2:
   {
     backgroundColor: '#2a6db0ff',
     flex: 1,
@@ -65,7 +69,7 @@ const styles = StyleSheet.create({
     marginTop: 100,
   },
 
-  Botones2: 
+  /* Botones2: 
   {
     backgroundColor: '#89bef3ce',
     borderRadius: 10,
@@ -76,7 +80,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }, */
 
   input: 
   {
@@ -114,4 +118,20 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     marginVertical: 35,
   },
+
+
+
+  Botones2:
+  {
+    backgroundColor: '#89bef3ce',
+    borderRadius: 10,
+    paddingVertical: 15,           // alto del botón
+    paddingHorizontal: 40,           //Ancho del botón
+    borderColor: 'white',         // color del borde
+    marginVertical: 10,        // margen vertical entre botones
+    flexDirection: 'row',   //  Ícono + texto en fila
+    alignItems: 'center',   //  Centra verticalmente
+    justifyContent: 'center', //  Centra todo horizontalmente
+  },
+
 });
