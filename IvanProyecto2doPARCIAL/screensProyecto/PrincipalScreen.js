@@ -10,17 +10,16 @@ export default function PrincipalScreen() {
 
   return (
     <View style={styles.container}>
-      
       <View style={styles.header}>
         <Text style={styles.appName}>Ahorra+ App</Text>
         <View style={styles.menuIcon}>
-        <Text style={styles.menuLines}>≡</Text>
+          <Text style={styles.menuLines}>≡</Text>
         </View>
+        <Text style={styles.greeting}>Hola, Luis Fernando</Text>
+        <Text style={styles.changeUser}>Cambiar de usuario</Text>
+      </View>
 
-        <Text style={styles.greeting}>HOLA LUIS FERNANDO</Text>
-        <Text style={styles.changeUser}>cambiar usuario</Text>
-        </View>
-        <TouchableOpacity style={styles.biometricsButton}>
+      <TouchableOpacity style={styles.biometricsButton}>
         <Text style={styles.biometricsText}>Entrar con biometría</Text>
       </TouchableOpacity>
 
@@ -29,11 +28,11 @@ export default function PrincipalScreen() {
         contentContainerStyle={styles.scrollContainer}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
-       >
+      >
         {items.map((item, index) => (
           <View key={index} style={styles.iconBox}>
-          <Image source={item.source} style={styles.image} />
-          <Text style={styles.iconLabel}>{item.label}</Text>
+            <Image source={item.source} style={styles.image} />
+            <Text style={styles.iconLabel}>{item.label}</Text>
           </View>
         ))}
       </ScrollView>
@@ -46,15 +45,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#337fcaff', 
     paddingTop: 60,
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    alignItems: 'center'
   },
   header: {
-    marginBottom: 40
+    marginBottom: 40,
+    width: '100%',
+    paddingHorizontal: 20,
+    position: 'relative'
   },
   appName: {
     fontSize: 24,
     color: 'white',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 10
   },
   menuIcon: {
     position: 'absolute',
@@ -79,13 +84,15 @@ const styles = StyleSheet.create({
   biometricsButton: {
     backgroundColor: 'white',
     paddingVertical: 15,
+    paddingHorizontal: 60,
     borderRadius: 10,
     alignItems: 'center',
-    marginBottom: 30
+    marginBottom: 30,
+    minWidth: 200
   },
   biometricsText: {
     color: '#6C2DC7',
-    fontSize: 18,
+    fontSize: 18
   },
   scroll: {
     flexGrow: 0
@@ -114,9 +121,3 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 });
-
-
-
-
-
-
