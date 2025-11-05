@@ -19,6 +19,9 @@ import Transferencias3 from './Transferencias3';
 import Transferencias4 from './Transferencias4';
 import Transferencias5 from './Transferencias5';
 import TransferenciaExitosa from './TransferenciaExitosa';
+import ConfiguracionScreen from './ConfiguracionScreen';
+import CuentasScreen from './CuentasScreen';
+import CerrarScreen from './CerrarScreen';
 import { ImageBackground } from 'react-native-web'
 
 
@@ -81,8 +84,14 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
         case 'TransferenciaExitosa':
               return <TransferenciaExitosa />;
 
-            
+         case 'ConfiguracionScreen':
+              return <ConfiguracionScreen />;
 
+        case 'CuentasScreen':
+              return <CuentasScreen />;
+
+        case 'CerrarScreen':
+              return <CerrarScreen />;
 
         case 'Menu':
             default:
@@ -92,8 +101,6 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color= "orange" title='Pract:pantalla1' onPress={()=> setScreen('Pantalla1')}/>
                             <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('Pantalla2')}/>
                             <Button color= "orange" title='Pract:CargaScreen' onPress={()=> setScreen('CargaScreen')}/>
-
-
                             <Button color= "orange" title='Pract:Transferencias' onPress={()=> setScreen('Transferencias')}/>
                             <Button color= "orange" title='Transferencias2' onPress={() => setScreen('Transferencias2')} />
                             <Button color= "orange" title='Transferencias 3' onPress={() => setScreen('Transferencias3')} />
@@ -104,9 +111,9 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color="orange" title='Pract:Pagina Principal'  onPress={()=> setScreen('PrincipalScreen')}/>
                             <Button color="orange" title='Pract:Notificacion'  onPress={()=> setScreen('NotificacionesScreen')}/>
                             <Button color="orange" title='Pract:Menú Lateral'  onPress={()=> setScreen('MenuLateralScreen')}/>
-                            
-                        
-
+                            <Button color="orange" title='Pract:Configuraciones'  onPress={()=> setScreen('ConfiguracionScreen')}/>
+                            <Button color="orange" title='Pract:Cuentas '  onPress={()=> setScreen('CuentasScreen')}/>
+                            <Button color="orange" title='Pract:Cerrar'  onPress={()=> setScreen('CerrarScreen')}/>
                   
                         </View>
                     )

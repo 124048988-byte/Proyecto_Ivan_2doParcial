@@ -3,9 +3,9 @@ import { Text, StyleSheet, View, TouchableOpacity, ScrollView, Image } from 'rea
 
 export default function PrincipalScreen() {
   const [items, setItems] = useState([
-    { label: 'Token Móvil', source: require('../assets/Recursos/Token.png') },
-    { label: 'Operaciones QR', source: require('../assets/Recursos/qr.jpg') },
-    { label: 'Emergencias', source: require('../assets/Recursos/sos.png') }
+    { label: 'Token Móvil', source: require('../assets/RecursosProyectoIvan/Token.png') },
+    { label: 'Operaciones QR', source: require('../assets/RecursosProyectoIvan/qr.jpg') },
+    { label: 'Emergencias', source: require('../assets/RecursosProyectoIvan/sos.png') }
   ]);
 
   return (
