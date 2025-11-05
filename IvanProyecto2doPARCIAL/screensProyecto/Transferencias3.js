@@ -44,11 +44,11 @@ export default function NuevoDestino() {
           </Text>
         </View>
 
-        <TouchableOpacity style={styles.searchButton}>
+        <TouchableOpacity style={styles.searchButton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.searchButtonText}>Buscar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.otherButton}>
+        <TouchableOpacity style={styles.otherButton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.otherButtonText}>Elegir otro destino</Text>
         </TouchableOpacity>
 

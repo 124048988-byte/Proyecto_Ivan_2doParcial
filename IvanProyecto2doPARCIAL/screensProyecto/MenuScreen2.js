@@ -93,6 +93,7 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
         case 'CerrarScreen':
               return <CerrarScreen />;
 
+  
         case 'Menu':
             default:
                     return (
@@ -114,7 +115,7 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color="orange" title='Pract:Configuraciones'  onPress={()=> setScreen('ConfiguracionScreen')}/>
                             <Button color="orange" title='Pract:Cuentas '  onPress={()=> setScreen('CuentasScreen')}/>
                             <Button color="orange" title='Pract:Cerrar'  onPress={()=> setScreen('CerrarScreen')}/>
-                  
+                      
                         </View>
                     )
 

@@ -28,17 +28,17 @@ export default function Transferencias2() {
   
         <Text style={styles.destinoTitulo}>Destino</Text>
 
-        <TouchableOpacity style={styles.opcion}>
+        <TouchableOpacity style={styles.opcion} onPress={() => Alert.alert('Proximamente..')}>
           <Ionicons name="add-circle-outline" size={20} color="#0061E0" />
           <Text style={styles.opcionTexto}>Nuevo</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.opcion}>
+        <TouchableOpacity style={styles.opcion} onPress={() => Alert.alert('Proximamente..')}>
           <Ionicons name="card-outline" size={20} color="#0061E0" />
           <Text style={styles.opcionTexto}>Mis cuentas y tarjetas</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.opcion}>
+        <TouchableOpacity style={styles.opcion} onPress={() => Alert.alert('Proximamente..')}>
           <Ionicons name="heart-outline" size={20} color="#0061E0" />
           <Text style={styles.opcionTexto}>Contactos guardados</Text>
         </TouchableOpacity>

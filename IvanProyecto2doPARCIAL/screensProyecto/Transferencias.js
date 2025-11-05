@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Transferencias({ navigation }) {
@@ -22,7 +22,7 @@ export default function Transferencias({ navigation }) {
           <Text style={styles.cuenta}>• 213</Text>
         </View>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => Alert.alert('Proximamente...')}>
           <Text style={styles.buttonText}>Continuar</Text>
         </TouchableOpacity>
 
@@ -30,7 +30,7 @@ export default function Transferencias({ navigation }) {
         <View style={styles.buttonsContainer}>
           <TouchableOpacity 
             style={styles.actionButton}
-            onPress={() => navigation.navigate('ListaTransacciones')}
+            onPress={() => Alert.alert('Proximamente..')}
           >
             <Ionicons name="list" size={20} color="#fff" />
             <Text style={styles.actionButtonText}>Lista de transacciones</Text>
@@ -38,7 +38,7 @@ export default function Transferencias({ navigation }) {
 
           <TouchableOpacity 
             style={styles.actionButton}
-            onPress={() => navigation.navigate('AgregarTransacciones')}
+            onPress={() =>Alert.alert('Proximamente..')}
           >
             <Ionicons name="add-circle" size={20} color="#fff" />
             <Text style={styles.actionButtonText}>Agregar transacción</Text>
@@ -46,7 +46,7 @@ export default function Transferencias({ navigation }) {
 
           <TouchableOpacity 
             style={styles.actionButton}
-            onPress={() => navigation.navigate('EditarTransacciones')}
+            onPress={() => Alert.alert('Proximamente..')}
           >
             <Ionicons name="create" size={20} color="#fff" />
             <Text style={styles.actionButtonText}>Editar transacción</Text>
@@ -54,7 +54,7 @@ export default function Transferencias({ navigation }) {
 
           <TouchableOpacity 
             style={styles.actionButton}
-            onPress={() => navigation.navigate('EliminarTransacciones')}
+            onPress={() => Alert.alert('Proximamente..')}
           >
             <Ionicons name="trash" size={20} color="#fff" />
             <Text style={styles.actionButtonText}>Eliminar transacción</Text>

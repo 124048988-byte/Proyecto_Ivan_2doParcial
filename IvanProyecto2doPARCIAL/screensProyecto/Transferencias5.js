@@ -26,7 +26,7 @@ export default function CodigoSeguridad() {
         secureTextEntry={true}
       />
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => Alert.alert('Proximamente..')}>
         <Text style={styles.buttonText}>Aceptar</Text>
       </TouchableOpacity>
     </View>
