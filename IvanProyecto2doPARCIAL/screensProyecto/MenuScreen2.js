@@ -5,19 +5,18 @@ import React, { useState } from 'react'
 import Pantalla1 from './Pantalla1'
 import Pantalla2 from './Pantalla2'
 import CargaScreen from './CargaScreen'
-//import BotonesScreen from './BotonesScreen'
-//import InputAlertScreen from './InputAlertScreen'
-//import ImageBackgroundScreen from './ImageBackgroundScreen'
+import Transferencias from './Transferencias'
+import SaludFinancieraScreen from './SaludFinancieraScreen'
+import PrincipalScreen from './PrincipalScreen'
+import NotificacionesScreen from './NotificacionesScreen'
+//import MenuLateralScreen from './MenuLateralScreen'
 
 
 
-import { ImageBackground } from 'react-native-web'
+//import { ImageBackground } from 'react-native-web'
 
 
-
-
-
-export default function menuScreen()  { /* Esta linea era para crear componentes, pero ahora creamos una funcion */
+export default function MenuScreen2()  { /* Esta linea era para crear componentes, pero ahora creamos una funcion */
  
     const [screen, setScreen] = useState('Menu');     /* lo del "menu" significa que por default siempre me abra la pantalla "Menu"  */
     switch(screen)
@@ -28,11 +27,23 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
        case 'Pantalla2':
             return <Pantalla2/>
 
-         case 'CargaScreen':
+        case 'CargaScreen':
             return <CargaScreen/>
+        
+        case 'Transferencias':
+            return <Transferencias/>
 
-        /*case 'image_background':
-            return <ImageBackgroundScreen/>  */
+         case 'SaludFinancieraScreen':
+            return <SaludFinancieraScreen/> 
+
+         case 'PrincipalScreen':
+            return <PrincipalScreen/>
+
+        case 'NotificacionesScreen':
+            return <NotificacionesScreen/>
+            
+        case 'MenuLateralScreen':
+            return <MenuLateralScreen/> 
             
 
         case 'Menu':
@@ -43,10 +54,11 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color= "orange" title='Pract:pantalla1' onPress={()=> setScreen('Pantalla1')}/>
                             <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('Pantalla2')}/>
                             <Button color= "orange" title='Pract:CargaScreen' onPress={()=> setScreen('CargaScreen')}/>
-                            <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('')}/>
-                           {/*  <Button color="orange" title='Pract:Buttons'  onPress={()=> setScreen('botones')}/>
-                            <Button color="orange" title='Pract:Input y Alert'  onPress={()=> setScreen('input_alert')}/>
-                            <Button color="orange" title='Pract:Image Background'  onPress={()=> setScreen('image_background')}/> */}
+                            <Button color= "orange" title='Pract:Transferencias' onPress={()=> setScreen('Transferencias')}/>
+                            <Button color= "orange" title='Pract:Salud Financiera' onPress={()=> setScreen('SaludFinancieraScreen')}/>
+                            <Button color="orange" title='Pract:Pagina Principal'  onPress={()=> setScreen('PrincipalScreen')}/>
+                            <Button color="orange" title='Pract:Notificacion'  onPress={()=> setScreen('NotificacionesScreen')}/>
+                            <Button color="orange" title='Pract:Menú Lateral'  onPress={()=> setScreen('MenuLateralScreen')}/>
                             
                         </View>
                     )

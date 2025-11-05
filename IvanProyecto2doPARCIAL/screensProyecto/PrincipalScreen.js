@@ -3,10 +3,10 @@ import { Text, StyleSheet, View, TouchableOpacity, ScrollView, Image } from 'rea
 
 export default function PrincipalScreen() {
   const [items, setItems] = useState([
-    { label: 'Token Móvil', source: require('../assets/Recursos/Token.png') },
-    { label: 'Operaciones QR', source: require('../assets/Recursos/qr.jpg') },
-    { label: 'Emergencias', source: require('../assets/Recursos/sos.png') }
-  ]);
+    { label: 'Token Móvil', source: require('../assets/RecursosProyectoIvan/Token.jpeg') },
+    { label: 'Operaciones QR', source: require('../assets/RecursosProyectoIvan/qr.jpeg') },
+    { label: 'Emergencias', source: require('../assets/RecursosProyectoIvan/sos.jpeg') }
+  ]); 
 
   return (
     <View style={styles.container}>
@@ -44,7 +44,7 @@ export default function PrincipalScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#2C3EFA', 
+    backgroundColor: '#337fcaff', 
     paddingTop: 60,
     paddingHorizontal: 20
   },
