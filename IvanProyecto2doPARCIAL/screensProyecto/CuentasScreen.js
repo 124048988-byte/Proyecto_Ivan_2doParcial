@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 export default function CuentasScreen() {
   return (
     <View style={styles.container}>
-      {/* Header */}
+
       <View style={styles.header}>
         <TouchableOpacity>
           <Text style={styles.back}>⬅️</Text>
@@ -15,23 +15,23 @@ export default function CuentasScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Cuerpo */}
+      
       <View style={styles.body}>
-        {/* Saldo Disponible */}
+        // Saldo Disponible 
         <View style={styles.card}>
           <Text style={styles.monto}>$ 100.00</Text>
           <Text style={styles.subtext}>Saldo disponible</Text>
           <Text style={styles.link}>Ver ingresos y gastos</Text>
         </View>
 
-        {/* Apartados */}
+        //Apartados 
         <View style={styles.card}>
           <Text style={styles.subtitulo}>Total de apartados</Text>
           <Text style={styles.monto2}>$ 20,000.00</Text>
           <Text style={styles.link}>Ver apartados</Text>
         </View>
 
-        {/* Opciones */}
+        //Opciones
         <View style={styles.rowButtons}>
           <TouchableOpacity style={styles.btnBox}>
             <Text style={styles.emoji}>🔁</Text>

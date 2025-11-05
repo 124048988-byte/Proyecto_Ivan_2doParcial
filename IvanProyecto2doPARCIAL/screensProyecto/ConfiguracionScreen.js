@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#FFFFFF",
   },
-  header: {
-    backgroundColor: "#1E40AF", // azul superior
+  header: { //superior
+    backgroundColor: "#1E40AF", 
     paddingVertical: 20,
     alignItems: "center",
     borderBottomLeftRadius: 20,

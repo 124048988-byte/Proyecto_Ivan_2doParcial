@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from "react-nati
 export default function NotificacionesScreen() {
   return (
     <View style={styles.container}>
-      {/* Encabezado */}
+
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Notificaciones</Text>
         <View style={styles.headerIcons}>
@@ -25,7 +25,7 @@ export default function NotificacionesScreen() {
         </View>
       </View>
 
-      {/* Cuerpo */}
+      // Cuerpo
       <View style={styles.body}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Text style={styles.sectionTitle}>27 septiembre</Text>
@@ -54,7 +54,7 @@ export default function NotificacionesScreen() {
         </ScrollView>
       </View>
 
-      {/* Barra inferior */}
+      // Barra inferior
       <View style={styles.footer}>
         <Text style={styles.footerEmoji}>🏠</Text>
         <Text style={styles.footerEmoji}>📄</Text>
