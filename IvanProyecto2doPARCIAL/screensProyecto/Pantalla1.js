@@ -55,12 +55,11 @@ const styles = StyleSheet.create({
   Botones:
   {
     backgroundColor: '#89bef3ce',
-    borderRadius: 13,              // redondeo de bordes
-    paddingVertical: 25,           // alto del botón
-    paddingHorizontal: 140,           //Ancho del botón
+    borderRadius: 30,
+    paddingVertical: 15,           // alto del botón
+    paddingHorizontal: 40,           //Ancho del botón
     borderColor: 'white',         // color del borde
-    marginVertical: 10,       // margen entre botones 
-        
+    marginVertical: 10,        // margen vertical entre botones
   },
 
 
