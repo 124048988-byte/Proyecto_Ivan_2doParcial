@@ -5,18 +5,12 @@ import React, { useState } from 'react'
 import Pantalla1 from './Pantalla1'
 import Pantalla2 from './Pantalla2'
 import CargaScreen from './CargaScreen'
-//import BotonesScreen from './BotonesScreen'
-//import InputAlertScreen from './InputAlertScreen'
-//import ImageBackgroundScreen from './ImageBackgroundScreen'
 import Transferencias from './Transferencias';
 import Transferencias2 from './Transferencias2';
 import Transferencias3 from './Transferencias3';
 import Transferencias4 from './Transferencias4';
 import Transferencias5 from './Transferencias5';
 import TransferenciaExitosa from './TransferenciaExitosa';
-
-
-
 import { ImageBackground } from 'react-native-web'
 
 
@@ -36,9 +30,6 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
 
          case 'CargaScreen':
             return <CargaScreen/>
-
-        /*case 'image_background':
-            return <ImageBackgroundScreen/>  */
         
         case 'Transferencias':
               return <Transferencias />;
@@ -64,9 +55,6 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('Pantalla2')}/>
                             <Button color= "orange" title='Pract:CargaScreen' onPress={()=> setScreen('CargaScreen')}/>
                             <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('Pantalla2')}/>
-                           {/*  <Button color="orange" title='Pract:Buttons'  onPress={()=> setScreen('botones')}/>
-                            <Button color="orange" title='Pract:Input y Alert'  onPress={()=> setScreen('input_alert')}/>
-                            <Button color="orange" title='Pract:Image Background'  onPress={()=> setScreen('image_background')}/> */}
                             <Button title='Transferencias' onPress={() => setScreen('Transferencias')} />
                             <Button title='Transferencias2' onPress={() => setScreen('Transferencias2')} />
                             <Button title='Transferencias 3' onPress={() => setScreen('Transferencias3')} />
