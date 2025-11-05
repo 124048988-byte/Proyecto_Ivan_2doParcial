@@ -5,11 +5,10 @@ import React, { useState } from 'react'
 import Pantalla1 from './Pantalla1'
 import Pantalla2 from './Pantalla2'
 import CargaScreen from './CargaScreen'
-import Transferencias from './Transferencias'
 import SaludFinancieraScreen from './SaludFinancieraScreen'
 import PrincipalScreen from './PrincipalScreen'
 import NotificacionesScreen from './NotificacionesScreen'
-//import MenuLateralScreen from './MenuLateralScreen'
+import MenuLateralScreen from './MenuLateralScreen'
 //import BotonesScreen from './BotonesScreen'
 //import InputAlertScreen from './InputAlertScreen'
 //import ImageBackgroundScreen from './ImageBackgroundScreen'
@@ -55,24 +54,22 @@ export default function MenuScreen2()  { /* Esta linea era para crear componente
             
         case 'MenuLateralScreen':
             return <MenuLateralScreen/> 
-        /*case 'image_background':
-            return <ImageBackgroundScreen/>  */
-        
-        case 'Transferencias':
-              return <Transferencias />;
-            case 'Transferencias2':
-              return <Transferencias2 />;
-            case 'Transferencias3':
-              return <Transferencias3 />;
-            case 'Transferencias4':
-              return <Transferencias4 />;
-            case 'Transferencias5':
-              return <Transferencias5 />;
-            case 'TransferenciaExitosa':
-              return <TransferenciaExitosa />;
-            case 'Contador':
 
-            
+        case 'Transferencias2':
+              return <Transferencias2 />;
+
+        case 'Transferencias3':
+              return <Transferencias3 />;
+
+        case 'Transferencias4':
+              return <Transferencias4 />;
+
+        case 'Transferencias5':
+              return <Transferencias5 />;
+
+        case 'TransferenciaExitosa':
+              return <TransferenciaExitosa />;
+
 
         case 'Menu':
             default:
@@ -89,11 +86,7 @@ export default function MenuScreen2()  { /* Esta linea era para crear componente
                             <Button color="orange" title='Pract:Notificacion'  onPress={()=> setScreen('NotificacionesScreen')}/>
                             <Button color="orange" title='Pract:Menú Lateral'  onPress={()=> setScreen('MenuLateralScreen')}/>
                             
-
-                            <Button color= "orange" title='Pract:pantalla2' onPress={()=> setScreen('Pantalla2')}/>
-                           {/*  <Button color="orange" title='Pract:Buttons'  onPress={()=> setScreen('botones')}/>
-                            <Button color="orange" title='Pract:Input y Alert'  onPress={()=> setScreen('input_alert')}/>
-                            <Button color="orange" title='Pract:Image Background'  onPress={()=> setScreen('image_background')}/> */}
+                        
                             <Button title='Transferencias' onPress={() => setScreen('Transferencias')} />
                             <Button title='Transferencias2' onPress={() => setScreen('Transferencias2')} />
                             <Button title='Transferencias 3' onPress={() => setScreen('Transferencias3')} />

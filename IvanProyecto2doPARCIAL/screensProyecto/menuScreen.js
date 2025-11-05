@@ -10,7 +10,6 @@ import Transferencias4 from './Transferencias4';
 import Transferencias5 from './Transferencias5';
 import TransferenciaExitosa from './TransferenciaExitosa';
 import PrincipalScreen from './PrincipalScreen';
-
 import ContadorScreen from './ContadorScreen';
 import BotonesScreen from './BotonesScreen';
 import InputAlertScreen from './InputAlertScreen';
@@ -69,6 +68,7 @@ export default function menuScreen() {
     case 'Principal':
       return <PrincipalScreen />;
     default:
+
       return (
         <View style={styles.EstiloBotones}>
           <Text>Menu de pantallas</Text>
