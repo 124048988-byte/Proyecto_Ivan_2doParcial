@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, Pressable } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Transferencias4() {
@@ -76,7 +76,7 @@ export default function Transferencias4() {
       </View>
 
       <Modal transparent visible={visible} animationType="fade" onRequestClose={cerrarModal}>
-        <Pressable style={styles.fondo} onPress={cerrarModal}>
+        <TouchableOpacity style={styles.fondo} onPress={cerrarModal}>
           <View style={styles.modal}>
             <Text style={styles.modalTitulo}>Monto a transferir</Text>
 
@@ -90,7 +90,7 @@ export default function Transferencias4() {
               <Text style={styles.modalTexto}>Continuar</Text>
             </TouchableOpacity>
           </View>
-        </Pressable>
+        </TouchableOpacity>
       </Modal>
     </View>
   );

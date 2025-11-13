@@ -6,12 +6,15 @@ export default function TransferenciaExitosa() {
   return (
     <View style={styles.container}>
     
+
       <View style={styles.header}>
         <Text style={styles.headerText}>Transferir</Text>
+            <TouchableOpacity  onPress={() => Alert.alert('Proximamente..')}>
         <Ionicons name="close-circle-outline" size={24} color="white" />
+          </TouchableOpacity>
       </View>
-
     
+
       <View style={styles.content}>
         <View style={styles.circle}>
           <Ionicons name="checkmark" size={60} color="#00C853" />
@@ -22,11 +25,11 @@ export default function TransferenciaExitosa() {
         <Text style={styles.subtitle}>Monto Transferido</Text>
         <Text style={styles.amount}>$ 100.00</Text>
 
-        <TouchableOpacity style={styles.primaryButton}>
+        <TouchableOpacity style={styles.primaryButton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.primaryButtonText}>Compartir Comprobante</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.secondaryButton}>
+        <TouchableOpacity style={styles.secondaryButton} onPress={() => Alert.alert('Proximamente..')}>
           <Text style={styles.secondaryButtonText}>Menú principal</Text>
         </TouchableOpacity>
       </View>

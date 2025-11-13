@@ -1,6 +1,6 @@
 /* Zona de componentes */
 
-import { Text, StyleSheet, View, Button} from 'react-native' /* Con esto me sirve para crear un nuevo componente: rncs */
+import { Text, StyleSheet, View, Button, ScrollView} from 'react-native' /* Con esto me sirve para crear un nuevo componente: rncs */
 import React, { useState } from 'react' 
 import Pantalla1 from './Pantalla1'
 import Pantalla2 from './Pantalla2'
@@ -99,6 +99,8 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
         case 'Menu':
             default:
                     return (
+
+                        <ScrollView>
                         <View style={styles.EstiloBotones}>
                             <Text>Menu de practicas</Text>
                             <Button color= "orange" title='Pract:pantalla1' onPress={()=> setScreen('Pantalla1')}/>
@@ -119,6 +121,7 @@ export default function menuScreen()  { /* Esta linea era para crear componentes
                             <Button color="orange" title='Pract:Cerrar'  onPress={()=> setScreen('CerrarScreen')}/>
                             <Button color="orange" title='Pract: Destaca'  onPress={()=> setScreen('DestacaScreen')}/>
                         </View>
+                        </ScrollView>
                     )
 
     }

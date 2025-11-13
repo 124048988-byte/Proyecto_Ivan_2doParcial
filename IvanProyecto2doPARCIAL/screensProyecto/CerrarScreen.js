@@ -5,25 +5,25 @@ export default function CerrarScreen() {
   return (
     <View style={styles.overlay}>
       <View style={styles.modalContent}>
-
+    
         <Text style={styles.cerrarTxt}>Cerrar </Text>  <Text style={styles.iconos}>✖️ </Text>
-
         <Text style={styles.icon}>⚠️</Text>
-
         <Text style={styles.title}>¿Quieres salir?</Text>
-
         <Text style={styles.subtitle}>
           No se guardarán los datos de esta operación.
         </Text>
-
-        <View style={styles.btnSalir}>
-          <Text style={styles.txtSalir}>Salir</Text>
+    
+        <TouchableOpacity style={styles.btnSalir} onPress={() => Alert.alert('Proximamente..')}>  
+        <View >
+          <Text style={styles.txtSalir}>Salir</Text>  
         </View>
+        </TouchableOpacity>
 
-        <View style={styles.btnVolver}>
+        <TouchableOpacity  style={styles.btnVolver} onPress={() => Alert.alert('Proximamente..')}>
+        <View>  
           <Text style={styles.txtVolver}>Volver</Text>
         </View>
-
+         </TouchableOpacity>
       </View>
     </View>
   );
